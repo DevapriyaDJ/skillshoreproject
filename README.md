@@ -1,26 +1,26 @@
-# [Project Name] 🎯
+# SkillShore 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: ThreeBugs
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: DevaPriya D J - LBS Institute of Technology for Women Thiruvananthapuram Kerala
+- Member 2: Anjana Gopan - LBS Institute of Technology for Women Thiruvananthapuram Kerala
+- Member 3: Pournami Harilakshmi - LBS Institute of Technology for Women Thiruvananthapuram Kerala
 
 ### Hosted Project Link
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+Our project SkillShore provides a barter system in our skills; that is we can exchange our skills with people.
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+There are many people around us who are limited to expand their skills just because they don't want to spend so much money just for that or doesn't have the environment to learn it . So here we comes with our app where we can trade our skills .
+# The Solution
+Yes you heard it right, you can trade your skills!!! If you want to learn something new or to expand your current skill then don't worry, if you got another skill in your hands ; you can trade your skill to other people in need and attain a new  skill in back. We provide people the chance to learn something new just by providing what's in their hands. We connect people who have similar bios who can be student and teacher to each other where if they are interested they can take online classes on their skills, also if they are in a similar society they can even have an offline session . By this people can expand their skills along with expanding their friends circle!!!! Also the thought of money when you want to learn something cool disappears!
 
-### The Solution
-[How are you solving it? Keep it fun!]
 
 ## Technical Details
 ### Technologies/Components Used
