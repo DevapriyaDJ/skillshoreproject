@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area of Interest</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #D2B89E;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }     
+
+    h1::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      background-color: #672d18;
+      margin: 10px auto 40px;
+    }
+
+    .bubble-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 60px;
+    }
+
+    .bubble {
+      padding: 10px 20px;
+      background-color: #672d18;
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s;
+      font-size: 1rem;
+      border: none;
+      outline: none;
+      position: relative;
+    }
+
+    .bubble:hover {
+      transform: scale(1.1);
+      background-color: #944a32;
+    }
+
+    .bubble.selected {
+      background-color: #b45027;
+    }
+
+    .bubble.selected::after {
+      content: '\2713'; /* Checkmark symbol */
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: white;
+      color: #4caf50;
+      font-size: 1rem;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .continue-btn {
+      background-color: #672d18;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 100px;
+    }
+
+    .continue-btn:hover {
+      background-color: #944a32;
+    }
+  </style>
+</head>
+<body>
+  <h1>Area Of Interest</h1>
+  <div class="bubble-container">
+    <button class="bubble">CODING</button>
+    <button class="bubble">MUSIC</button>
+    <button class="bubble">READING</button>
+    <button class="bubble">DANCE</button>
+    <button class="bubble">PHOTOGRAPHY</button>
+    <button class="bubble">LANGUAGE SKILL</button>
+    <button class="bubble">FOOD</button>
+    <button class="bubble">COMMUNICATION SKILL</button>
+    <button class="bubble">CLAY ART</button>
+    <button class="bubble">FASHION STYLING</button>
+    <button class="bubble">APTITUDE</button>
+    <button class="bubble">FITNESS</button>
+    <button class="bubble">AI</button>
+    <button class="bubble">STARTUPS</button>
+    <button class="bubble">KNITTING</button>
+    <button class="bubble">MAGIC</button>
+    <button class="bubble">PAINTING</button>
+    <button class="bubble">DRAWING</button>
+    <button class="bubble">SCULPTING</button>
+    <button class="bubble">POTTERY</button>
+    <button class="bubble">INSTRUMENTS</button>
+    <button class="bubble">EDITING</button>
+    <button class="bubble">COOKING</button>
+  </div>
+  <button class="continue-btn"onclick="redirectToNextPage()">Continue</button>
+
+  <script>
+    const bubbles = document.querySelectorAll('.bubble');
+
+    bubbles.forEach(bubble => {
+      bubble.addEventListener('click', () => {
+        bubble.classList.toggle('selected');
+      });
+    });
+    function redirectToNextPage() {
+        window.location.href = "skillshore5.html";
+    
+    }
+    
+  </script>
+</body>
+</html>

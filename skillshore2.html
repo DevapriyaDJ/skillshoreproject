@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Popup Message</title>
+  <style>
+    @font-face {
+      font-family: 'Caligo';
+      src: url('path-to-caligo-font.woff2') format('woff2'); /* Update with the actual font file path */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #c4996c;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .popup {
+      text-align: center;
+      background: #d2b89e;
+      padding: 20px 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transform: scale(0);
+      animation: popIn 0.8s ease-out forwards;
+    }
+
+    .popup h1 {
+      font-family: 'Caligo', sans-serif;
+      font-size: 1.8rem;
+      margin: 0 0 20px;
+      color: #333;
+    }
+
+    .popup button {
+      background:  #672d18;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .popup button:hover {
+      background: #b45027;
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="popup">
+    <h1>Excited to swap your skill!!!</h1>
+    <button onclick="redirectToProfile()">Create Profile</button>
+  </div>
+
+  <script>
+    // Redirect to the Bio Form page
+    function redirectToProfile() {
+        window.location.href = "skillshore3.html"; // Change to the actual path of the second HTML file
+    }
+</script>
+</body>
+</html>

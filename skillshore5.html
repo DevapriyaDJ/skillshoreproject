@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .profile-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #b45027;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #555;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .main-container {
+            margin: 100px auto;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .user-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
+            cursor: pointer;
+        }
+
+        .user-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #b45027;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+
+        .user-details {
+            flex-grow: 1;
+        }
+
+        .user-details h3 {
+            margin: 0 0 10px;
+        }
+
+        .user-details p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .skills {
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .skills .section {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills .section h4 {
+            margin: 0 0 10px;
+            font-size: 14px;
+        }
+
+        .skills .section ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .skills .section ul li {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Icons (Star and Notification) -->
+    <div class="header">
+        <div class="icon-button">⭐</div>
+        <div class="icon-button">🔔</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- User 1 -->
+        <div class="user-card" onclick="viewUserDetails('Devapriya D J', 'djdevapriya@gmail.com', '27/01/2006', 'Photography, Public speaking', 'designing, Pottery making', '1234567890')">
+            <div class="user-photo">A</div>
+            <div class="user-details">
+                <h3>Devapriya D j</h3>
+                <p>An enthusiast who is constantly learning.</p>
+            </div>
+        </div>
+        <!-- User 2 -->
+        <div class="user-card" onclick="viewUserDetails('Anjana Gopan', 'anjana@gmail.com', '15/03/1999', 'Workout Planning, Coding', 'Yoga, Mental Coaching', '9876543210')">
+            <div class="user-photo">B</div>
+            <div class="user-details">
+                <h3>Anjana Gopan</h3>
+                <p>A nature lover and traveller enthusiast.</p>
+            </div>
+        </div>
+        <!-- User 3 -->
+        <div class="user-card" onclick="viewUserDetails('Pournami Harilakshmi', 'pournami@gmail.com', '20/11/1998', 'Programming, App Development', 'AI/ML, UI/UX Design', '')">
+            <div class="user-photo">C</div>
+            <div class="user-details">
+                <h3>Pournami Harilakshmi</h3>
+                <p>Tech enthusiast and software developer.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function viewUserDetails(name, email, dob, skills, aspirations, phone) {
+            const userDetailsPage = `
+                <div style="text-align:center; padding:20px;">
+                    <h2>${name}</h2>
+                    <p>Date of Birth: ${dob}</p>
+                    <h3>Skills:</h3>
+                    <p>${skills}</p>
+                    <h3>Aspirations:</h3>
+                    <p>${aspirations}</p>
+                    <div style="margin-top:20px;">
+                        <h4>Contact Info:</h4>
+                        ${phone ? <p><a href="tel:${phone}" style="text-decoration:none; color:#007BFF;">Call: ${phone}</a></p> : ''}
+                        ${email ? <p><a href="mailto:${email}" style="text-decoration:none; color:#007BFF;">Email: ${email}</a></p> : ''}
+                    </div>
+                </div>
+            `;
+            const newWindow = window.open();
+            newWindow.document.write(userDetailsPage);
+        }
+    </script>
+</body>
+</html>
