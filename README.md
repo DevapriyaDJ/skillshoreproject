@@ -25,40 +25,33 @@ Yes you heard it right, you can trade your skills!!! If you want to learn someth
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
+- html,javascript,css
+  
 ### Implementation
 For Software:
 # Installation
-[commands]
+run
 
 # Run
-[commands]
+open in live server
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1](![Screenshot 2025-01-26 110847](https://github.com/user-attachments/assets/e2e1b45f-7b8d-42ad-9067-cd74cac2f4ad)
+the logo of the app.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2]![Screenshot 2025-01-26 110758](https://github.com/user-attachments/assets/bb1b0beb-e024-4095-8ff9-529135d64044)
+the code that we used to run the website. they code is in 5 parts that run together.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3]![Screenshot 2025-01-26 111909](https://github.com/user-attachments/assets/fd2923fc-adad-45db-9f1f-6e8405d8ccba)
+the inner page where we can find the info people and select them for learning or teaching skills.
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+screeshot4 ![Screenshot 2025-01-26 111021](https://github.com/user-attachments/assets/753748de-9ba1-49da-b644-409929e327a0)
+this is the area where you can select your areas of interest so that the matching profiles can connect.
+
+
 
 For Hardware:
 
@@ -70,17 +63,11 @@ For Hardware:
 *Add caption explaining the schematic*
 
 # Build Photos
-![Team](Add photo of your team here)
+![WhatsApp Image 2025-01-26 at 11 25 31_eb044838](https://github.com/user-attachments/assets/d179ac8a-6d14-4642-8fca-4485d16bbdce)
 
 
-![Components](Add photo of your components here)
-*List out all components shown*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
 
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
@@ -91,9 +78,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Devapriya DJ:Logo designing and coding
+- Anjana gopan: coding
+-Pournami Harilakshmi: coding
 
 ---
 Made with ❤️ at TinkerHub
